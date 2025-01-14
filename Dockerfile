@@ -8,4 +8,3 @@ RUN /rocker_scripts/install_geospatial.sh \
 
 # set timezone
 ENV TZ=America/New_York
-

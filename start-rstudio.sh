@@ -6,4 +6,5 @@ docker run \
   -ti \
   -p 8787:8787 \
   -v /data:/data \
-  rstudio
+  -v ${PWD}/.config/:/root/.config/rstudio \
+  rstudio:0.0.0.9999
