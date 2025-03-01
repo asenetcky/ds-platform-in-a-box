@@ -8,4 +8,4 @@ docker run \
   -v /data:/root/data \
   -v ${PWD}/.config/:/root/.config/ \
   -v ${PWD}/.Rprofile/:/root/.Rprofile \
-  asenetcky/ds-rstudio:0.1.0
+  asenetcky/ds-rstudio:0.3.0
