@@ -42,7 +42,7 @@
         ],
         "console_left_on_top": false,
         "console_right_on_top": true,
-        "additional_source_columns": 2
+        "additional_source_columns": 1
     },
     "source_with_echo": true,
     "check_arguments_to_r_function_calls": true,
@@ -55,5 +55,6 @@
     "syntax_color_console": true,
     "insert_native_pipe_operator": true,
     "show_hidden_files": true,
-    "document_author": "test123"
+    "document_author": "test123",
+    "default_project_location": "~"
 }
