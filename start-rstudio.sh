@@ -1,5 +1,7 @@
 #!/bin/bash
 
+bash create-env.sh
+
 docker run \
   --env-file .env \
   --rm \
