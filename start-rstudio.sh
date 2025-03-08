@@ -3,9 +3,9 @@
 docker run \
   --env-file .env \
   --rm \
-  -ti \
+  -tid \
   -p 127.0.0.1:8787:8787 \
-  -v /data:/root/data \
+  -v ${HOME}/data:/root/data \
   -v ${PWD}/.config/:/root/.config/ \
   -v ${PWD}/.Rprofile/:/root/.Rprofile \
-  asenetcky/ds-rstudio:0.3.0
+  asenetcky/ds-rstudio
