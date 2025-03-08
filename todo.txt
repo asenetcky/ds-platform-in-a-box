@@ -1,0 +1,3 @@
+1. consider 1password op integration
+2. consider executing shell scripts that pull git repos like dotfiles etc...
+  instead of maintaining a separate config in this repo
