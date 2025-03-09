@@ -1,3 +1,6 @@
 1. consider 1password op integration
 2. consider executing shell scripts that pull git repos like dotfiles etc...
   instead of maintaining a separate config in this repo
+3. set workdir 
+4. install gnu stow
+5. maybe do multi stage build? clone repo and  do gnu stow wet the workdir and then copy that over to the final r image?
