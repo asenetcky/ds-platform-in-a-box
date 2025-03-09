@@ -7,4 +7,21 @@ ENV TZ=America/New_York
 ARG DOTFILES_URL_PAT 
 
 # clone dotfiles repo
-RUN git clone ${DOTFILES_URL_PAT} 
+RUN apt-get update > /dev/null && \ 
+  apt-get install -y --no-install-recommends \ 
+  stow > /dev/null && \
+  rm -rf /var/lib/apt/lists/*
+
+
+WORKDIR /root
+RUN git clone -b ubuntu-main --single-branch ${DOTFILES_URL_PAT} /root/dotfiles/ && \
+  mv .bashrc .bashrc.bak && \
+  mv .profile .profile.bak 
+
+WORKDIR /root/dotfiles
+RUN ["stow", "."] 
+RUN ["bash", "setup.sh"]
+RUN ["bash", ".bashrc"]
+
+WORKDIR /root
+
