@@ -14,7 +14,7 @@ RUN apt-get update > /dev/null && \
 
 
 WORKDIR /root
-RUN git clone -b ubuntu-main --single-branch ${DOTFILES_URL_PAT} /root/dotfiles/ && \
+RUN git clone -b ds-platform --single-branch ${DOTFILES_URL_PAT} /root/dotfiles/ && \
   mv .bashrc .bashrc.bak && \
   mv .profile .profile.bak 
 
