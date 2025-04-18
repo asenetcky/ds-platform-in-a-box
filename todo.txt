@@ -1,3 +1,4 @@
 1. remove exa completely - from all aliases
 2. setup git - remove references to 1password
   2a. pass along a PAT in the env?
+3. ^ 1password has ssh apt passthrough
